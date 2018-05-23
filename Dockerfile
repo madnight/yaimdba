@@ -21,4 +21,4 @@ EXPOSE 8001
 
 CMD export LC_ALL=en_US.utf8 && \
     export LANG=en_US.utf8 && \
-    datasette serve -h 0.0.0.0 --config sql_time_limit_ms:30000 imdb.db
+    datasette serve -h 0.0.0.0 --cors --config sql_time_limit_ms:30000 imdb.db
