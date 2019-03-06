@@ -1,5 +1,4 @@
 titles=("ratings" "episode" "basics")
-# titles=("ratings" "principals" "episode" "crew" "basics" "akas")
 
 for i in "${titles[@]}"
 do
