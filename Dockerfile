@@ -1,4 +1,4 @@
-FROM archlinux/base
+FROM archlinux:base
 
 RUN                                            \
     pacman -Sy --noconfirm                  && \
@@ -14,6 +14,7 @@ RUN                                            \
     gcc                                     && \
     pip3 install                               \
     csvs-to-sqlite                             \
+    setuptools                                 \
     datasette                               && \
     mkdir /download
 
